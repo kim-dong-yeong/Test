@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{ margin: 0; padding: 0;}
+      div{width: 150px; height:150px;
+          background-color: coral;
+          margin: 30px;
+          display:inline;}
+     
+      .box1{visibility:visible;}
+      .box3{display:none;}
+      .box2{opacity:1;}
+      /*
+       visibility:화면에 보이거나 숨기거나 함.
+       visibility:hidden; 화면에서 숨김
+       visibility:visible; 화면에서 보여줌
+
+       opacity:[fx];요소의 투명도 지정
+       fx : 요소의 투명도 지정 0 ~ 1 사이 값
+
+       display: 화면 보여주는 방식
+       display:none; 화면에서 숨김.
+       display:block; 블록레벨요소로 만듬.
+                   (화면에 보여줌)
+       display:inline; 인라인레벨로 만듬
+       display:inline-block; 인라인레벨이면서 가로값과 세로값이 적용됨.
+      */
+
+      span{width: 200px; height: 150px; 
+           background-color: crimson;
+           margin: 20px;
+           display:inline-block;}
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box3">box3</div>
+    <div class="box2">box2</div>
+
+    <div class="box4">box4</div>
+    <div class="box4-1">box4</div>
+    <div class="box4-2">box4</div>
+
+    <span>인라인레벨요소</span>
+    <span>인라인레벨요소</span>
+    <span>인라인레벨요소</span>
+    <span>인라인레벨요소</span>
+</body>
+</html>

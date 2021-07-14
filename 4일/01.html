@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*   
+     float:left / right
+     배치를 하기위한 기준을선언하는 스타일
+
+     float를 선언한 요소의 다음요소 자동으로 상속성
+     float값이 설정됩니다 
+     이런상황 무시하고 그다음줄에서 재배치를 하고자할때
+     clear를 사용합니다
+
+     */
+     div{width: 100px; height: 100px;}
+     .red1{ float: left;
+           background-color: red;}
+     .blue1{ float: left;
+           background-color: blue;}
+     .green1{ float:left; 
+           background-color: green;}
+     .black{clear: left;
+           background-color: black;}      
+
+     .red2{ float: right;
+           background-color: red;}
+     .blue2{ float: right;
+           background-color: blue;}
+     .green2{ float: right; 
+           background-color: green;}      
+    </style>
+</head>
+<body>
+    <div class="red1"></div>
+    <div class="blue1"></div>
+    <div class="green1"></div>
+    <div class="black"></div>
+
+    <div class="red2"></div>
+    <div class="blue2"></div>
+    <div class="green2"></div>
+</body>
+</html>

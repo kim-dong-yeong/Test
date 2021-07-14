@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        *{margin: 0; padding: 0;}
+         .wrapper{
+             width: 500px; height: 150px;
+             border: 3px solid red;
+             margin-bottom: 200px;
+             display: flex;
+         }
+         #container1{ align-items: stretch;}
+         #container2{ align-items: flex-start;}
+         #container3{ align-items: flex-end;}
+         #container4{ align-items: center;}
+         #container5{ align-items: baseline;}
+
+         .wrapper div{ width: 100px; border: 2px solid #000;
+                       background-color: gold;}  
+
+         h2{ font-size: 20px; 
+             font-weight: 900;
+             text-align: center;}
+
+        
+
+    </style>
+</head>
+<body>
+
+ <h2>align-items</h2>  
+ <p>align-items: 플렉스 요소의 수직방향정렬으로  설정<br>
+    stretch : 기본 설정, 플렉스 요소의 높이가 플렉스 컨테이너의 높이와 같게 변경된 뒤 연이어 배치됩니다.<br>
+    flex-start : 플렉스 요소는 플렉스 컨테이너의 위쪽에 배치됩니다.<br>
+    flex-end : 플렉스 요소는 플렉스 컨테이너의 아래쪽에 배치됩니다.<br>
+    center : 플렉스 요소는 플렉스 컨테이너의 가운데 배치됩니다.<br>
+    baseline : 플렉스 요소는 플렉스 컨테이너의 기준선에 배치됩니다.
+
+ </p>
+
+ <div id="container1" class="stretch">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+
+ <div id="container2" class="flex-start">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+
+ <div id="container3" class="flex-end">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+ <div id="container4" class="center">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+    <div id="box4"><h2>4</h2></div>
+ </div>
+ <div id="container5" class="baseline wrapper">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+
+
+
+</body>
+</html>

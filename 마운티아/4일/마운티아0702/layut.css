@@ -1,0 +1,74 @@
+/*기본스타일시트*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #333;
+    font-family: "맑은고딕";
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: #000;
+}
+
+a:visited {
+    color: #ccc;
+}
+
+/*레이아웃스타일시트*/
+#wrap {
+    width: 100%;
+}
+
+
+#header {
+    width: 100%;
+    height: 165px;
+    background-color: blueviolet;
+}
+
+
+#main_img {
+    width: 100%;
+    height: 470px;
+    background-color: aquamarine;
+}
+
+
+#contents {
+    width: 100%;
+    height: 3000px;
+    background-color: brown;
+}
+
+
+
+#footer {
+    width: 100%;
+    height: 435px;
+    background-color: cornflowerblue;
+}

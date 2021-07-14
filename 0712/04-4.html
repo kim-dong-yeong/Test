@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all-self</title>
+    <style>
+        *{margin: 0; padding: 0;}
+         #container{
+             width: 500px; height: 150px;
+             border: 3px solid red;
+             margin-bottom: 200px;
+             display: flex;
+             /*
+             
+             
+             justify-content: center;
+             */
+             align-items: center;
+          }
+
+         #container div{ width: 100px; border: 2px solid #000;
+                       background-color: gold;}  
+         #box3{align-self: center;
+             }
+        #box1{ order:2;}
+        #box2{ order:3;}
+        #box3{ order:1;}
+
+/*
+     align-self 플렉스 컨테이너의 align-items 속성보다 우선 적용됩니다. 
+                이 속성을 사용하면 플렉스 요소마다 서로 다른 align 속성값을 설정할 수 있습니다.
+     order :플렉스 컨테이너 안에 있는 플렉스 요소들의 순서를 설정합니다.
+     flex-grow :플렉스 컨테이너 아이템들이 차지할 너비들에 대한 증가형 숫자를 지정합니다.
+     flex-shrink :플렉스 컨테이너 아이템들이 차지할 너비들에 대한 감소형 숫자를 지정합니다.
+     flex-basis :플렉스 컨테이너 아이템의 길이를 지정합니다.
+*/
+    </style>
+</head>
+<body>
+
+ <h2></h2>  
+ <p></p>
+
+ <div id="container">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+
+ 
+
+
+
+</body>
+</html>

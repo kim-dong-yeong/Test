@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{ margin: 0; padding: 0;}
+      /*
+      "마진을 주는 요소(태그)에는 
+      가로세로 크기가 있어야 적용이됨"
+
+      margin:0; 4개방향 같은값의 마진값선언
+      margin:0 0; 세로 가로
+      **********************
+      자신을 가운데 배치할때 
+      자신의 좌우로 아무것도 없었어야 함 
+      margin:0 auto;
+      **********************
+      margin:0 0 0; 위쪽 좌우 아래쪽
+      margin:0 0 0 0; 위쪽 오른쪽 아래쪽 왼쪽
+    
+      margin-top, margin-right,  
+      margin-bottom, margin-left
+
+      padding는 안쪽여백
+      padding:0;
+      padding:0 0;
+      padding:0 0 0;
+      padding:0 0 0 0;
+      *****패딩은 안쪽 여백이므로 값이 요소의 가로값, 세로값에서 벗어나면 요소가 크기가 변화됨
+      */
+
+
+      div{ width: 100px; height: 100px;}
+      .box1{ background-color: brown;
+             margin:100px 0 0 50px;}
+      .box2{ background-color: cornflowerblue;}
+
+      .box3{background-color: darkgray;
+            width: 500px; height: 500px;
+            padding: 100px 0 0 50px;}
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">
+        box3box3box3box3box3box3box3
+        box3box3box3box3box3box3box3
+        box3box3box3box3box3box3box3
+        box3box3box3box3box3box3box3
+    </div>
+</body>
+</html>

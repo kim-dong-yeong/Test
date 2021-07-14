@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justfly-content</title>
+    <style>
+        *{margin: 0; padding: 0;}
+         .wrapper{
+             width: 500px; height: 50px;
+             border: 3px solid red;
+             margin-bottom: 200px;
+             display: flex;
+         }
+         .wrapper div{ width: 100px; border: 2px solid #000;
+                       background-color: gold;}  
+
+         h2{ font-size: 20px; 
+             font-weight: 900;
+             text-align: center;}
+
+         #container1{justify-content:flex-start;}
+         #container2{justify-content:flex-end;}
+         #container3{justify-content:center;}
+         #container4{justify-content:space-between;}
+         #container5{justify-content:space-around;}
+
+    </style>
+</head>
+<body>
+
+ <h2>justfy-content</h2>  
+ <p>justify-content 플레스요소의 수평방향정렬방식을 설정(가로정렬)<br>
+     flex-start: 기본설정, 플렉스요소는 플렉스 컨테이너의 앞쪽에서부터 시작<br>
+     flex-end: 플렉스요소는 플렉스 컨테이너의 뒤쪽에서부터 시작<br>
+     center: 플렉스요소는 플렉스 컨테이너의 가운데에서부터 배치<br>
+     space-between: 플렉스 요소 사이에만 여유 공간을 두고 배치<br>
+     space-around:플렉스요소 앞뒤 그리고 요소사이 모두 여유공간을 두고 배치
+ </p>
+
+ <div id="container1" class="flex_star wrapper">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+
+ <div id="container2" class="flex_end wrapper">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+
+ <div id="container3" class="flex_center wrapper">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+ <div id="container4" class="space_between wrapper">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+    <div id="box4"><h2>4</h2></div>
+ </div>
+ <div id="container5" class="space_around wrapper">
+    <div id="box1"><h2>1</h2></div>
+    <div id="box2"><h2>2</h2></div>
+    <div id="box3"><h2>3</h2></div>
+ </div>
+
+
+
+</body>
+</html>

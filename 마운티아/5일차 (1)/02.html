@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{height: 5000px;}
+        /*
+        파이어폭스 -moz-
+        크롭, 사파리 -webkit-
+        오페라 -o-
+        익스플로러 -ms-
+     
+        css3는 확실하게 웹표준으로서 완성된게 아니라 계속적으로 개발되고 있기때문에
+        속성과 속성값앞에 해당하는 웹사이트의 접두사를 붙혔어 사용
+      
+
+        가상선택{border: 1px solid #000;
+              -webkit-border: 1px solid #000;
+              -ms-border: 1px solid #000;
+              -o-border: 1px solid #000;
+              -moz-border: 1px solid #000;}
+         */   
+        
+        .box1{margin: 100px; border-radius: 100px 100px 300px 400px;
+              width: 200px; height: 200px; border: 1px solid #000;
+              font-size: 50px; }
+              /*
+              border-radius:100px;  4개방향 모두 같은 값의 둥근 모서리
+              border-radius:10px 20px 30px 40px;
+                각각방향 위쪽에왼쪽 위쪽에오른쪽 아래쪽에오른쪽 아래쪽왼쪽
+              */  
+        .box2{ margin: 100px; 
+               width:150px; height: 150px;
+               background-color: cornflowerblue;
+               box-shadow: 10px 10px 5px #000 inset}
+               /*
+               box-shadow:[dx] [dy] [bulr] [spread] [set]
+              ;지정된 요소의 그림자를 설정함
+
+                dx : 그림자의 가로방향 위치
+                dy : 그림자의 세로방향 위치
+                bulr : 흐려짐 정도
+                spread : 번짐 정도
+                set : 그림자의 형태
+                •outset : 요소 바깥쪽으로 그림자가 떨어짐 (기본값)
+                •inset : 요소 안쪽으로 그림자가 떨어짐
+               */
+            h1{font-size: 60px; font-weight: 900;
+               color:blueviolet;
+               text-shadow:   0 0 4px #ccc,
+                              0 -3px 4px #ff3,
+                              1px -6px 6px #fd3,
+                             -1px -9px 11px #f80,
+                             1px -12px 18px #f20;} 
+        .txt{ border: 3px dotted red;
+              width: 400px; padding: 10px;
+              white-space:normal;
+              overflow:visible; } 
+              /*
+              white-space: 자동줄바꿈 설정속성
+              white-space:normal; 기본으로 자동줄바꿈
+              white-space:nowrap; 자동줄바꿈 금지
+
+              overflow: 대상의 크기에서 벗어나는 자식요소들을 보일지 말지 설정하는 스타일
+              overflow:visible; 보임 기본이라서 선언안해도 됨
+              overflow:hidden; 숨김
+              overflow:scroll; 벗어난만큼 크기를 보이기위해 스크롤 생성
+              
+              */
+          .box3{ margin: 50px; width: 200px; height: 150px; 
+                 background-color: crimson;
+                 border: 10px solid #000;}
+          #header{ width: 1000px; height:150px;
+                   background-color: #ccc;}   
+
+          #header .logo{float: left; border:5px solid #000;
+                        width: 120px; height: 150px; 
+                        background-color: #f20;
+                        box-sizing: content-box;}   
+          /*
+            box-sizing 대상의 크기에 테두리속성 포함시키는 스타일 
+            box-sizing: border-box; 패딩하고 보드를 자신의 크기에 포함
+            box-sizing: content-box; 마진을 포함
+          */
+
+          #header .nav{ float: left;
+                        width:800px; height: 150px;
+                        background-color: #ff3;}  
+          #header .info_mn{float: left;
+                           width:80px; height: 150px;
+                           background-color: aqua;}  
+
+          .box10{width:160px; margin: 20px;
+                 height:40px; border: 10px solid #000;}                                                     
+    </style> 
+</head>
+<body>
+    <div class="box1">div</div>
+    <div class="box2">div</div>
+    <h1>textshadow</h1>
+
+    <P class="txt">
+        CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일
+        타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일
+        타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일
+        타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일
+        타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일CSS텍스트스타일
+    </P>
+   
+    <div class="box3">box3</div>
+
+    <header id="header">
+        <div class="logo">logo</div>
+        <div class="nav">nav</div>
+        <div class="info_mn">info_mn</div>
+    </header>
+    </header>
+</body>
+</html>

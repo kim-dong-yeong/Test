@@ -1,0 +1,103 @@
+/*기본스타일시트*/
+*{margin: 0; padding: 0;}
+body{margin: 0; padding: 0;
+     font-size: 12px;
+     color: #333;
+     font-family:"맑은고딕";}
+img{border: 0;}
+ul, ol, li{ list-style: none;}
+a:link{ text-decoration: none;
+        color: #333;}
+a:hover{color: #000;}
+a:active{color: #000;}
+a:visited{color: #ccc;}
+
+/*레이아웃스타일시트*/
+#wrap{ width: 100%;}
+
+
+#header{float: left; width:100%; 
+}
+#header_top{ margin:0 auto;
+             width:1000px; height: 110px;
+             background-color: crimson;}
+#header_top .logo{ float: left; margin: 45px 0 0 5px;}
+
+#header_top .go_btns{float: left; margin: 55px 0 0 150px;}
+#header_top .go_btns li{float: left; margin-right: 25px;}
+#header_top .go_btns a{font-size:15px;}
+
+#header_top .input_box{float: left; 
+                       margin: 50px 0 0 10px;
+                       width: 260px; height:30px;
+                       background-color: #fff;
+                       border:1px solid #ccc;}
+#header_top .input_box span{ margin-left: 10px;
+                             line-height: 30px;
+                             color: grey;}
+#header_top .input_box a{float: right; 
+                         margin: 5px 5px 0 0;}
+
+
+
+
+#header_nav{width:100%; height: 50px;
+            background-color: darkcyan; }
+
+
+
+#main_img{
+    width:100%; height:470px;
+    background-color: aquamarine;   
+}
+
+
+#contents{
+    float: left;
+    width:100%; 
+}
+
+#item{margin: 0 auto; margin-top: 40px;
+      width:1000px; height:260px;
+      background-color: darkorange;}
+
+#banner{margin: 0 auto; 
+        margin-top: 40px; margin-bottom: 40px;
+        width:1000px; height:280px;
+        background-color: darkorange;}
+
+#movie{width:100%; height:300px;
+       background-color: darkorange;}
+
+#style{margin: 0 auto; margin-top: 40px;
+       width:1000px; height:260px;
+       background-color: darkorange;}
+
+#banner02{margin:0 auto; 
+       margin-top: 40px; margin-bottom:80px;
+       width:1000px; height:395px;
+       background-color: darkorange;}
+
+#info{width:100%; height:165px;
+       background-color: darkorange;}
+
+
+
+
+
+#footer{
+    float: left;
+    width: 100%; height:435px;
+    background-color: cornflowerblue;
+}
+#footer_top{ margin: 0 auto;
+             width: 1000px; height:290px;
+             background-color: deepskyblue;}
+
+#footer_bottom{width: 100%; height:140px ;
+               background-color: dodgerblue;}
+#footer_bottom .in_box{
+                margin: 0 auto;
+                width: 1000px; height:140px;
+                background-color: goldenrod;
+}

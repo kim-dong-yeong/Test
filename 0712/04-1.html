@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex - flex-wrap</title>
+    <style>
+        *{margin: 0; padding: 0;}
+         #container{
+             margin: 0 auto;
+             width: 500px; height: 300px;
+             border: 3px solid #000;
+            
+             display: flex;
+             flex-wrap: wrap-reverse;
+            
+         }
+         #container div{
+             width:200px;
+             border: 1px solid red;
+             background-color: gold;
+         }
+         h2{ font-size: 40px; 
+             font-weight: 900;
+             padding: 20px;}
+    </style>
+</head>
+<body>
+
+ <h2>flex - flex-wrap</h2>  
+ <p>flex-wrap: 플렉스 라인에 더이상의 여유가 없을때, 플렉스 요소의 위치를 다음줄로 넘길 여부를 설정<br>
+    nowrap : 기본 설정, 플렉스 요소가 다음 줄로 넘어가지 않습니다. 대신 플렉스 요소의    
+           너비를 줄여서 한 줄에 모두 배치시킵니다.
+    wrap : 플렉스 요소가 여유 공간이 없으면 다음 줄로 넘어가서 배치됩니다.
+    wrap-reverse : 플렉스 요소가 여유 공간이 없으면 다음 줄로 넘어가서 배치됩니다. 단,  
+                아래쪽이 아닌 위쪽으로 넘어갑니다
+ </p>
+ <div id="container">
+    <div id="box1">
+        <h2>1</h2>
+    </div>
+    <div id="box2">
+        <h2>2</h2>
+    </div>
+    <div id="box3">
+        <h2>3</h2>
+    </div>
+ </div>
+
+
+
+</body>
+</html>

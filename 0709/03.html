@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{ width: 150px; height: 100px;}
+        /*그라데이션*/
+        .box1{float: left; width: 60%; background-color:blueviolet;}
+        .box2{float: left; width: 60%;background-color:#000000;}
+        .box3{float: left; width: 60%; background-color:#000}
+        .box4{float: left; width: 60%; background-color:rgba(81,146,146,0.5)}
+                            /*
+                                 rgba(red,green,blue,투명도)
+                                 red,green,blue 0~255
+                                 0~1 50%== 0.5,  70%== 0.7
+                                 http://www.colorpicker.com/
+                            */     
+        .box5{float: left; width: 60%; background-color:hsla(286, 96%, 39%, 1.0);} 
+                             /* 
+                               hsla(색상, 채도, 명도, 투명도)
+                               색상 == 0~255 
+                               채도 == 0%~100% 
+                               명도 == 0%~100%
+                               투명도 == 0 ~ 1  0=0%  1=100%;
+                               http://www.workwithcolor.com/hsl-color-picker-01.htm
+                             */
+        .box6{float: left; width: 60%;  
+                           background: #2bdd1f;/*그라데이션효과가 적용이 안될때 기본배경색 설정*/
+                           background: -webkit-linear-gradient(top, #2bdd1f 0%, #934f7f 35%, #7db9e8 100%);
+                           background: -ms-linear-gradient(top, #2bdd1f 0%, #934f7f 35%, #7db9e8 100%);
+                           background: -moz-linear-gradient(top, #2bdd1f 0%, #934f7f 35%, #7db9e8 100%);
+                           background: -o-linear-gradient(top, #2bdd1f 0%, #934f7f 35%, #7db9e8 100%)
+                           /*
+                           [웹브라우저의 접두사]  파이어폭스 -moz- 
+                                               크롭, 사파리 -webkit-
+                                               오페라 -o-
+                                               익스플로러 -ms-
+                           */
+        }  
+                  /*
+                             http://www.colorzilla.com/gradient-editor/
+
+                                    linear-gradient(방향deg,색상1, 색상2)
+                                    linear-gradient(top/right/bottom/left,색상1, 색상2)
+                                    linear-gradient(방향deg,색상1 0%, 색상2 50%, 색상3 100%;)
+                                    linear-gradient(top/right/bottom/left,색상1 0%, 색상2 100%)
+                                    
+                                    radial-gradient(색상1, 색상2, 색상3)
+                                    radial-gradient(색상1 0%, 색상2 50%, 색상3 70%)
+
+                  */           
+
+    </style>
+</head>
+<body>
+   
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+      <div class="box5">box5</div>
+      <div class="box6">box6</div>
+   
+</body>
+</html>

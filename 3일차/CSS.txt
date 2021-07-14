@@ -1,0 +1,157 @@
+[CSS 사용의 의의]
+CSS는 웹 사이트에서 사용되는 스타일을 지정하기 위한 언어(디자인적인부분을 서술)
+
+문서의 구조(웹문서구조 html)와 표편(스타일시트) 분리함으로써 문서 구조의 수정 없이 
+스타일의 변경만으로 다양한 표현을 할 수 있다는 것을 의미함
+
+
+[스타일 시트의 구성요소]
+ 
+ 선택자{속성:속성값; 속성:속성값;}
+
+· 선택자(Selector) -예약어
+- HTML 문서에서 스타일을 정의할 대상을 의미한다.
+- 하나 또는 그 이상의 선택자가 지정될 수 있다.
+
+· 선언(Declaration)
+- 선택자에게 지정한 스타일을 의미한다.
+- 속성(Property)과 속성값(Value)으로 구성된다.
+- 속성과 속성값은 “:”으로 구분한다.
+- 선언은 반드시 “;”으로 끝나야 한다.
+
+
+1. 전체 선택자(Universal Selector)는 모든 요소를 선택하는 방법으로, "*"를 선택자로 선언.
+   ex--> *{속성:속성값;}
+
+
+2. 클래스 선택자
+HTML 요소의 class 속성 값을 참조하여 선택하는 방법.
+HTML 요소에 여러 개를 지정.
+
+
+3. 아이디 선택자
+HTML 요소의 id 속성 값을 참조하여 선택하는 방법.
+HTML 요소에 한개를 지정.
+
+4. 하위 선택자(Descendant Combinator)
+하위 선택자(Descendant Combinator) 방식은 선택자와 선택자를 공란으로 선언하며, 
+선행 선택자의 하위 요소 중 후행 선택자 해당하는 요소를 선언
+
+
+5. 자식 선택자(Child Combinator)
+자식 선택자(Child Combinators) 방식은 선행 선택자인 부모 요소 하위에 포함된 후행 선택자인 자식 요소를 선택하는 방법.
+이때 부모 선택자와 자식 선택자는 ">"로 구분하여 선언.
+
+ex --> #main > div{속성: 속성값;}
+
+
+7. 형제 선택자(Sibling Combinators)
+기본 형제 선택자(General Sibling Combinators)와 인접 형제 선택자(Adjacent Sibling Cobnators)로 구분할 수 있음.
+기본 형제 선택자는 선행 선택자와 후행 선택자를 "+"로 구분하여 선언하고, 
+인접 형제 선택자는 "~"로 구분하여 선언.
+
+ex -->  기본형제     선택자 + 선택자{속성:속성값;}
+          인접형제     선택자 ~ 선택자{속성:속성값;}
+
+
+8.선택자 그룹화
+앞에서 살펴본 모든 선택자는 콤마(,)를 사용하여 그룹으로 한 번에 선언할 수 있음. 
+선택자를 그룹으로 선언할 경우, 선언된 모든 선택자에는 동일한 선언이 적용됨.
+
+ex --> 선택자, 선택자{속성:속성값;}
+
+
+
+[스타일 시트 선언방법]
+
+1.내부 스타일 시트 : <head>와 </head>사이에 선언
+
+<style type = "text/css" 또는 “text/JavaScript"> 
+  선택자 or 선택자 { 속성:속성값; 속성:속성값; }
+</style>
+*****type = "text/css" 또는 “text/JavaScript"는  html5에서는 생략 
+
+
+2. 외부 스타일 시트 : 외부의 파일로 작성한 후 <LINK> 또는 @import‎‎‎‎ 명령을 이용하여 선언하는 방법
+
+<LINK>를 이용하여 연결
+- 형식 : <LINK rel = "stylesheet" type = "text/css" href = "파일명“>
+
+@import‎‎‎‎를 이용하여 연결
+- 형식
+<style type = "text/css" or "text/JavaScript">
+
+@import‎‎‎‎ url("파일명“);
+
+</style>
+
+
+
+3. 인라인 스타일 시트 : 일반 html 태그에 스타일을 직접 지정하는 방법
+
+    - <태그 style = "속성:속성값; 속성:속성값“> 문장 </태그>
+
+    - 단, <head>와 <title>에서는 사용할 수 없다.
+
+
+[스타일 시트에서 사용하는 단위]
+
+- 절대적 단위 : in, cm, mm, pt, px
+
+- 상대적 단위 : em,ex
+
+
+
+ 
+
+[ Font 관련 스타일]
+
+- font "값들만“ : 대표속성
+
+- font-family : 글꼴, 글꼴 이름은 쉼표(,)로 구분, 글꼴 이름이 두 단어 이상이면 큰 따옴표로 묶는다. 브라우저는 앞에 있는 글꼴 부터 보여준다.
+
+- font-style "normal, italic, oblique" : 기울임꼴을 적용
+
+- font-variant "normal, small-caps" : small-caps 크기가 작은 대문자
+
+- font-weight "normal, bold, 100～900" : 글자 굵기  *****100px 안됨 정해진 값 100~ 900
+
+- font-size "숫자em(상위 element 크기에 배수), 숫자pt" : 글자 크기 유전되지 않음 기본적으로 px확인
+
+ 
+
+[Text 관련 스타일]
+
+- line-height "normal, 숫자, 숫자em, %“ : 줄간격
+
+- text-indent "숫자em, 퍼센트, 숫자“ : 들여쓰기, 음수사용시 내어쓰기
+
+- text-align "left, right, center, justify" : 텍스트나 이미지 수평정렬
+
+- text-decoration “none, underline, overline, line-through" : 줄 긋기 유전되지 않음
+
+- letter-spacing "normal, 숫자em, 숫자“ : 글자 간격
+
+- text-transform "capitalize, uppercase, lowercase, none" : 영문자 변환 첫글자만 대문자 소문자
+
+․ vertical-align "baseline, sup, sub, middle, text-top, - top, text-bottom, bottom" :텍스트나 이미지 수직정렬
+
+
+
+[색상과 배경에 관련된 스타일]
+
+- color "영문자, RGB“ : 글자 및 밑줄 색
+
+- background-color "영문자, RGB, transparent" : 배경색
+
+- background-image "none, url(파일위치)“ : 배경 그림
+
+- background-repeat "repeat, repeat-x, repeat-y, no-repeat" : 배경이미지 반복 여부
+
+- background-attachment "scroll, fixed" : 화면이 스크롤 될 때 이동여부
+
+- background-position "top, bottom, left, center, right, 가로% 세로%“ : 이미지 반복 여부 가로p 세로p(음수 사용됨)
+
+
+
+

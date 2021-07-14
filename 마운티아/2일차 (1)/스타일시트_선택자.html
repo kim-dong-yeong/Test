@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*
+      선택자{속성:속성값;}
+      */
+  
+     *{color:#333;}/*전체선택자-모든태그에 기본값선언하는 선택자*/
+
+     h1{background-color: brown;}/*태그선택자-특정태그에 기본스타일을 적용할때*/
+     p{font-size: 30px;}
+     
+     #ttl{font-size: 100px;}/*특정태그 하나만 스타일적용할때 사용*/
+     #ttl02{font-size: 200px;}
+
+     .txt{ color: blue;}/* 아이디선택자처럼 특정 태그에 스타일 지정하지만 차이점은 여러 태그에 지정할수 있다*/
+
+     #ttl + h1{ background-color: aqua;} 
+     /* 인접한 태그 위쪽은 안됨, 아래쪽에 인접한 태그에 스타일을 적용*/
+
+     span{background-color: black;}
+
+     p > span{ background-color: brown;}
+     /*하위태그가 포함된 태그를 부모로 기준을 설정하고 하위태그에 스타일을 적용하는 방법*/
+
+     /* 스타일시트에서 주석처리할때*/
+     </style>
+</head>
+<body>
+    <!-- 태그를 주석처리할때  -->
+  
+    <h1>코리아IT아카데미</h1>
+    <h1 id="ttl">코리아IT아카데미</h1>
+    <h1>코리아IT아카데미</h1>
+    <p class="txt">프론트엔드반</p>
+    <p class="txt">프론트엔드반</p>
+
+    <p>
+        프론트엔드반
+        <span>부산진구</span>
+    </p>
+
+    <span id="ttl02">부산진구</span>
+    <span>부산진구</span>
+    <span class="txt">부산진구</span>
+</body>
+</html>

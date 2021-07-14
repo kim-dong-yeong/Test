@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동움직임</title>
+    <style>
+     *{ margin: 0; padding: 0;}
+       
+       .box1{ width: 100px; height: 100px;
+              background-color: blueviolet;
+              animation-name: ani01;
+              animation-delay: 3s;
+              animation-duration: 10s;
+              animation-direction: alternate;
+              animation-iteration-count: infinite;/*infinite 무한반복 / 10번의움직임 10*/
+              animation-timing-function: ease-in-out;
+
+              position: absolute; 
+              top:100px; left: 100px;
+              }
+
+         .box2{ width: 150px; height: 150px;
+              background-color: blueviolet;
+              animation-name: ani02;
+              animation-delay: 3s;
+              animation-duration: 10s;
+              animation-direction: alternate;
+              animation-iteration-count: infinite;/*infinite 무한반복 / 10번의움직임 10*/
+              animation-timing-function: ease-in-out;
+
+              position: absolute; 
+              top:100px; left: 1000px;
+              }
+
+
+       @keyframes ani01{
+            /*
+            시작 from, 0%
+            끝 to, 100%
+            */
+          from{position: absolute; 
+               top:100px; left: 100px;}
+          30%{position: absolute; 
+               top:500px; left: 700px;
+               transform: rotate(0deg);}     
+          50%{position: absolute; 
+               top:500px; left: 100px;
+               transform: rotate(360deg);}
+          to{position: absolute; 
+             top:100px; left: 1500px;
+             transform: rotate(360deg);}
+
+       }   
+       @keyframes ani02{
+        0%{transform: scale(1);}
+        10%{transform: scale(0.1);}
+        30%{transform: scale(3);
+        35%{transform: scale(1);}
+        50%{transform: scale(2);}
+        80%{transform: scale(0.5);}
+        100%{transform: scale(3);}
+       }    
+    </style>
+
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+</html>

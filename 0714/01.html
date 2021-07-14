@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box1{ width: 80%; height: 100px; border: 3px solid #000;
+             display: flex; }
+       .box1 > div{float: left; width:150px; height: 100px;
+                  flex: 2 2 0;}  
+        /* .box1-1{ background-color: red; flex-grow:0;}
+        .box1-2{ background-color: green; flex-grow:1;}
+        .box1-3{ background-color: blue; flex-grow:2;} */
+        /* .box1-1{ background-color: red; flex-shrink:0;}
+        .box1-2{ background-color: green; flex-shrink:1;}
+        .box1-3{ background-color: blue; flex-shrink:1;} */
+        .box1-1{ background-color: red; flex: 2 2 0;}
+        .box1-2{ background-color: green; flex: 2 2 0}
+        .box1-3{ background-color: blue; flex: 2 2 0}
+    
+    </style>
+</head>
+<body>
+    <h2>부모 flex-wrap, justify-content, align-items<br>
+        자식 align-self,  order, flex-grow, flex-shrink, flex-basis<br>
+        flex-grow 플렉스 컨테이너 아이템들이 차지할 너비들에 대한 증가형 숫자를 지정합니다.<br>
+        flex-shrink 플렉스 컨테이너 아이템들이 차지할 너비들에 대한 감소형 숫자를 지정합니다.<br>
+        flex-basis 플렉스 컨테이너 아이템의 길이를 지정합니다. 기본값이 0
+        <br>
+
+        flex : flex-grow flex-shrink flex-basis 을 한번에 설정 flex: 2 2 0;
+    </h2>
+
+
+    <div class="box1">
+        <div class="box1-1"></div>
+        <div class="box1-2"></div>
+        <div class="box1-3"></div>
+    </div>
+
+</body>
+</html>

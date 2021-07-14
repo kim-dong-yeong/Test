@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭메뉴</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        #all{ margin: 0 auto; margin-top: 200px;
+              width: 500px; height: 600px;
+              border: 3px solid #000;
+              position: relative;} 
+
+        input{display: none;}
+        label{ display: block; float: left; width:125px; height: 50px;
+               background-color: gold;
+               text-align: center; line-height: 50px;
+               font-size: 15px; color: #333; font-weight: 900;
+               cursor:pointer; transition: 0.5s;}
+        label:hover{ background-color: darkgray; transition: 0.5s;}  
+        
+        label:nth-child(1){ background-color: chocolate;}
+        label:nth-child(2){ background-color: cornflowerblue;}
+        label:nth-child(3){ background-color: darkcyan;}
+        label:nth-child(4){ background-color: deeppink;}
+        
+        .box{width: 500px; height:550px;  
+             font-size: 30px; color:#fff;
+             text-align: center; line-height: 550px;
+             position: absolute; top:50px; left: 0px;
+             display: none;} 
+        .box1{ background-color:blue; z-index:400;}
+        .box2{ background-color:brown; z-index:300;}
+        .box3{ background-color:coral; z-index:200;}
+        .box4{ background-color:aquamarine; z-index:100;}     
+
+        #all #mn1:checked ~ .box1,
+        #all #mn2:checked ~ .box2,
+        #all #mn3:checked ~ .box3,
+        #all #mn4:checked ~ .box4{display: block;}
+    </style>
+</head>
+<body>
+    <div id="all">
+        <label for="mn1">menu1</label><input type="radio" name="tab" id="mn1" checked>
+        <label for="mn2">menu2</label><input type="radio" name="tab" id="mn2">
+        <label for="mn3">menu3</label><input type="radio" name="tab" id="mn3">
+        <label for="mn4">menu4</label><input type="radio" name="tab" id="mn4">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>
