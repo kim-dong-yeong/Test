@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{ margin: 0; padding: 0;}
+      #header{ margin: 0 auto; position: relative;
+               width: 1000px; height: 95px;
+               background-color: darkgoldenrod;}
+      #header .logo{float: left; margin: 25px 0 0 35px;
+                    width:140px; height:45px;
+                    background-color: blueviolet;} 
+      #header .main_nav{float: left; margin:30px 0 0 70px;}
+      #header .main_nav li{float: left;
+                           list-style:none;
+                           margin-right: 20px;
+                           /*
+                           list-style-type: none;
+                           줄였어 이렇게도 사용
+                           list-style: none;
+                            */} 
+      #header .main_nav li a{
+                             font-size: 20px;
+                             color: #fff;
+                             font-family:"맑은고딕";
+                             text-decoration: none;
+                            }   
+      #header .info_mn{float: right; margin: 10px 10px 0 0;}
+      #header .info_mn li{float: left; margin-right: 10px;
+                          list-style: none;} 
+      #header .info_mn li a{font-size: 12px; color: #ccc;} 
+
+      #header .go_btn{display:block; 
+                      position: absolute; top:35px; right:20px;
+                      width:120px; height: 25px;
+                      font-size: 12px; color:#333;
+                      background-color: #ccc;
+                      text-transform:uppercase;
+                      text-decoration: none;
+                      text-align: center; line-height: 25px;
+                      font-weight: 900;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!--상단영역-->
+      <header id="header">
+          <!--로고영역-->
+          <div class="logo">logo</div>
+          <!--로고영역 end-->
+
+          <!--네비게이션 영역-->
+          <ul class="main_nav">
+              <li><a href="#">menu</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">menu</a></li>
+          </ul>
+          <!--네비게이션 영역 end-->
+
+          <!--인포메뉴 영역-->
+          <ul class="info_mn">
+              <li><a href="#">home</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">contactus</a></li>
+          </ul>
+          <!--인포메뉴 영역 end-->
+
+          <!--바로가기메뉴 영역-->
+          <a href="#" class="go_btn">intranet</a>
+          
+        </header>
+
+    </div>
+</body>
+</html>
