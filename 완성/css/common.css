@@ -134,4 +134,8 @@ footer > .foot_area > .addr { padding-top: 5px; line-height: 1.4; font-size: 13p
 footer > .foot_area > .addr > .space0 { letter-spacing: 0;}
 footer > .foot_area > .copy { padding-top: 3px; font-size: 13px; color: #666; letter-spacing: 0; }
 
+/* -------------------------------------------------------------------------------- */
+/* 태블릿 */
+@media all and(max-width:1065px) and (min-width:801px) {
 
+}
