@@ -138,4 +138,8 @@ footer > .foot_area > .copy { padding-top: 3px; font-size: 13px; color: #666; le
 /* 태블릿 */
 @media all and(max-width:1065px) and (min-width:801px) {
 
+    .box_inner {width: 100%;}
+    header > .header_area > h1 { padding : left; }
+    .header_cont { float: right; width: 60%; }
+    
 }
